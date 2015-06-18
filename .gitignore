@@ -6,7 +6,7 @@ bin-release/
 # Other files and folders
 .settings/
 build.xml
-/nbproject
+nbproject/
 .DS_Store
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
