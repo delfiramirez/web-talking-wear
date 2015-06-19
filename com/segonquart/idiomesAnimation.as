@@ -15,7 +15,7 @@ class idiomesAnimation extends Movieclip
 				
 		}
 	
-	private function enterSlide():Void
+	private function enterSlide()
                 {
 			
 			arrayLang_arr[0].slideTo('0', '-40', 0.6, 'easeInOutBack', 1);
@@ -27,7 +27,7 @@ class idiomesAnimation extends Movieclip
 			
 		}
 
-	public function IdiomesColour():Void
+	public function IdiomesColour()
 		{
 			
 			this.onRelease = this arrayColour;
@@ -39,7 +39,7 @@ class idiomesAnimation extends Movieclip
 			
 		}
 		
-	private function arrayColour():Void
+	private function arrayColour()
 		{
 			
 			for ( var:i ; arrayLang_arr[i] <4; i++)
