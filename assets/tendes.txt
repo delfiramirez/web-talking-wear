@@ -1,1 +1,23 @@
-﻿&Privat=<p>Botigues</p><p>BARCELONA</p><p>LES ENFANTS TERRIBLES, BULEVARD ROSA de Passeig de Gracia ( Nomes nois)</p><br> <p>TOMATE, Banys Nous 22 (Gotic)</p> <a href="http://www.tomate-bcn.com" target="_blank">www.tomate-bcn.com</a><br> <p>MONTCADA III, Montcada 3 (Born)</p><br> <p>PERROCKIA, Francoli 60-62 (Plaça Molina)</p> www.perrocker.com <p>---------------------</p><br /> <p>GIRONA</p><p>AYUMI, Ballesteries 50</p> <p>---------------------</p><br /> <p>SANT CELONI</p> <p>ELS 13 VENTS, Plaça de la vila</p> <p>---------------------</p><br /> <p>SANT ESTEVE DE PALAUTORDERA</p><p>CAÑELLAS, Crta. del Montseny</p><br>& 
+﻿&Privat=<p>Botigues</p>
+﻿<p><b>BARCELONA</b></p>
+﻿<p>LES ENFANTS TERRIBLES, BULEVARD ROSA de Passeig de Gracia ( Nomes nois)</p>
+﻿<br>
+﻿<p>TOMATE, Banys Nous 22 (Gotic)</p>
+<a href="http://www.tomate-bcn.com" target="_blank">www.tomate-bcn.com</a>
+<br />
+<p>MONTCADA III, Montcada 3 (Born)</p>
+<br />
+<p>PERROCKIA, Francoli 60-62 (Plaça Molina)</p>
+<a href="http://www.perrocker.com" target="_blank">www.perrocker.com</a>
+<p>---------------------</p>
+<br />
+<p><b>GIRONA</b></p>
+<p>AYUMI, Ballesteries 50</p>
+<p>---------------------</p>
+<br />
+<p><b>SANT CELONI</b></p>
+<p>ELS 13 VENTS, Plaça de la vila</p>
+<p>---------------------</p>
+<br />
+<p><b>SANT ESTEVE DE PALAUTORDERA</b></p>
+<p>CAÑELLAS, Crta. del Montseny</p><br>&
