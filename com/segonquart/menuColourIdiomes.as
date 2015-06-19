@@ -19,7 +19,7 @@ class menuColouridiomes extends MoviieClip
 			
 		}
 
-		private function mOver():Void
+		private function mOver()
 		
 		{
 			
@@ -27,7 +27,7 @@ class menuColouridiomes extends MoviieClip
 			
 		}
 
-		private function mOut():Void
+		private function mOut()
 		
 		{
 			
