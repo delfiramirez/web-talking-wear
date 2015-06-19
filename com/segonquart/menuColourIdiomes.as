@@ -2,7 +2,7 @@
 import mx.transitions.easing.*;
 import com.mosesSupposes.fuse.*;
 
-class com.segonquart.menuColouridiomes extends MoviieClip
+class menuColouridiomes extends MoviieClip
 		
 	{
 		public var cat, es, en ,fr:MovieClip;
