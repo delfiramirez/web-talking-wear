@@ -2,7 +2,7 @@
 import mx.transitions.easing.*;
 import com.mosesSupposes.fuse.*;
 
-class com segonquart idiomesAnimation extends Movieclip
+class idiomesAnimation extends Movieclip
         {
 
   private var arrayLang_arr:Array = new Array ("cat", "es", "en", "fr");
