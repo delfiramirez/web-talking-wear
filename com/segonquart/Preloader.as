@@ -1,4 +1,4 @@
-class com Preloader extends MovieClip{
+class Preloader extends MovieClip{
 
 	private var target_mc:MovieClip;
         private var progress_mc:MovieClip;
