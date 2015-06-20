@@ -14,6 +14,13 @@ class idiomesAnimation extends Movieclip
 			this.onEnterFrame = this.enterSlide;
 				
 		}
+		
+	private function onSlideIN()
+		{
+			this.stop();
+			this.onEnterFrame = this.enterSlide;
+			
+		}
 	
 	private function enterSlide()
                 {
@@ -22,8 +29,6 @@ class idiomesAnimation extends Movieclip
 			arrayLang_arr[1].slideTo('0', '-40', 0.8, 'easeInOutBack', 1.1);
 			arrayLang_arr[2].slideTo('0', '-40', 0.9, 'easeInOutBack', 1.2);
 			arrayLang_arr[3].slideTo('0', '-40', 1, 'easeInOutBack', 1.3);
-			
-			return this;
 			
 		}
 
