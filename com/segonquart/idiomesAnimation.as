@@ -10,17 +10,11 @@ class idiomesAnimation extends Movieclip
 
 			function idiomesAnimation():Void
 		{
-				
+			this.stop();
 			this.onEnterFrame = this.enterSlide;
 				
 		}
 		
-	private function onSlideIN()
-		{
-			this.stop();
-			this.onEnterFrame = this.enterSlide;
-			
-		}
 	
 	private function enterSlide()
                 {
