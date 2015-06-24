@@ -1,4 +1,4 @@
-﻿#include "includes/idiomes.as"
+#include "includes/idiomes.as"
 //Segonquart Studio 2007. Steal it with respect , honey ;-)
 //-------------------------------
 //Imports
