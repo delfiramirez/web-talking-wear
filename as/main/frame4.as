@@ -10,12 +10,14 @@ this.historia.htmlText =true;
 this.historia_txt.wordWrap = true;
 this.historia_txt.multiline = true;
 
-function textScroll():Void{
+
+function textScroll():Void
+{
 	this.onPress = this.oOut;
 	this.onRollOver =this.oOver;
 	this.onRollOut = this.oOut;
 	this.onRelease = this.oOut;
-}
+};
 
 function oOver():Void
 {
@@ -27,11 +29,7 @@ function oOut():Void
 	pressing = false;
 };
 
-this.onEnterFrame = function ()
-{
-    buttonsUI[i].oOver();
-	this.stop();
-};
+
 
 var Private_lv = new LoadVars ();
 Private_lv.load ("/assets/tendes.txt");
