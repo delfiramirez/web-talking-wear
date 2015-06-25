@@ -24,3 +24,5 @@ else
 	this.contact_txt.text = caContact;
 	this.ok_mc.send_txt.text = caSend;
 }
+
+
