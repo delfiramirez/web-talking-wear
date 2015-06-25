@@ -17,7 +17,7 @@ var m01:MovieClip;
 var m02:MovieClip;
 var botiga_mc:MovieClip;
 var marcMenu_mc:MovieClip;
-this.softsk_mc:MovieClip;
+var softsk_mc:MovieClip;
 
 
 
