@@ -70,14 +70,12 @@ Privat.onLoad = function ()
 	this.play ();
 };
 
-
-
-function init():Void{
+function initFrame4():Void{
 	
 onEnterFrame = startTextApp;
 EventDispatcher.initialize(this);
 
 }
 
-init();
+initFrame4();
 

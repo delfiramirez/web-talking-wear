@@ -6,7 +6,7 @@ import mx.utils.Delegate;
 import flash.filters.GlowFilter;
 import mx.transitions.easing.*;
 import com.mosesSupposes.fuse.*;
-import.com.segonquart.*;
+import com.segonquart.*;
 
 //-------------------------------
 //Security and Stage globals
