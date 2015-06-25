@@ -8,6 +8,11 @@ import mx.transitions.easing.*;
 import com.mosesSupposes.fuse.*;
 import.com.segonquart.*;
 
+System.security.allowDomain ("http://www.talking-wear.com");
+Stage.showMenu = false;
+Stage.scaleMode = "noScale";
+_global.showRedrawRegions (false);
+
 
 function initTWApp ():Void
 {
