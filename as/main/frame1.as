@@ -117,10 +117,12 @@ enterEshopListener.click = function (e)
 		this.removeEventListener ();
 	};
 };
+
 function initFrame1 ():Void
 {
 	onEnterFrame = initUI;
 	this.addEventListener ("click", enterShopListener);
 	EventDispatcher.initialize (this);
 }
+
 initFrame1 ();
