@@ -1,4 +1,6 @@
-﻿var historia_txt:String = "";
+﻿
+
+var historia_txt:String = "";
 var baixa_mc:MovieClip;
 var puja_mc:MovieClip;
 var buttonsUI:Array = new Array ("puja_mc", "baixa_mc");
@@ -19,7 +21,9 @@ function oOver ():Void
 	{
 		pressing = true;
 		movement = -1;
+		this.updateAfterEvent;
 	}
+	
 }
 function oOut ():Void
 {
@@ -27,6 +31,7 @@ function oOut ():Void
 	for (var i = 0; i < buttonsUI.length; i++)
 	{
 		pressing = false;
+		this.updateAfterEvent;
 	}
 }
 
