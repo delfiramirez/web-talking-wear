@@ -41,7 +41,7 @@ class idiomesAnimation extends Movieclip
 	private function arrayColour()
 		{
 			
-			for ( var:i ; arrayLang_arr[i] <4; i++)
+			for ( var:i:Number=0 ; arrayLang_arr[i] <4; i++)
 			{
 				this.colorTo("#628D22", 0.3, "easeOutCirc");
 				_parent.colorTo('#4b4b4b', 1, 'linear', .2);
