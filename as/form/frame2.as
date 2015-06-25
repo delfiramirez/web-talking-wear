@@ -1,8 +1,5 @@
-#include "includes/idiomes.as"
-//Segonquart Studio 2007. Steal it with respect , honey ;-)
-//-------------------------------
-//Imports
-//-------------------------------
+﻿#include "includes/idiomes.as"
+
 import System.Objects.*;
 import flash.filters.GlowFilter;
 import mx.transitions.easing.*;
@@ -11,10 +8,8 @@ import com.mosesSupposes.fuse.*;
 //-------------------------------
 ZigoEngine.simpleSetup (Shortcuts, PennerEasing);
 ZigoEngine.register (PennerEasing, Shortcuts, FuseFMP, FuseItem);
-Stage.scaleMode = "noScale";
-//-------------------------------
-//Variables
-//-------------------------------
+
+
 var m03:MovieClip;
 var o3:MovieClip;
 var cp:TextField;
@@ -24,7 +19,6 @@ var formulari_mc:MovieClip;
 var cp:MovieClip;
 /*Button */
 var ok_mc:MovieClip;
-
 var gf:GlowFilter = new GlowFilter (0xBEE47E, 100, 3, 3, 5, 3, false, false);
 
 
@@ -43,6 +37,8 @@ function initialState ():Void
 	this.ok_mc._scale = 20;
 	this.ok_mc.scaleTo (25, 1, "easeInOutBounce");
 }
+
+
 
 function transformElementsUI ():Void{
 	
