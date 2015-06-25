@@ -35,9 +35,9 @@ this.onEnterFrame = function ()
 	buttonsUI[i].oOver ();
 	this.stop ();
 };
-var Private_lv = new LoadVars ();
-Private_lv.load ("/assets/tendes.txt");
-Private_lv.onLoad = function ()
+var Privat = new LoadVars ();
+Privat.load ("/assets/tendes.txt");
+Privat.onLoad = function ()
 {
 	this.historia_txt.htmlText = this.Privat;
 	this.play ();

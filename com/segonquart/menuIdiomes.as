@@ -1,4 +1,4 @@
-﻿import mx.transitions.easing.*;
+import mx.transitions.easing.*;
 import com.mosesSupposes.fuse.*;
 
 	class menuIdiomes extends MovieClip

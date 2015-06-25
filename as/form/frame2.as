@@ -1,4 +1,4 @@
-﻿#include "includes/idiomes.as"
+#include "includes/idiomes.as"
 //Segonquart Studio 2007. Steal it with respect , honey ;-)
 //-------------------------------
 //Imports
@@ -44,7 +44,7 @@ function initialState ():Void
 	this.ok_mc.scaleTo (25, 1, "easeInOutBounce");
 }
 
-function transformElemnetsUI ():Void{
+function transformElementsUI ():Void{
 	
 		this.onRollOver = this.pOver;
 		this.onRollOut = this.pOut;
