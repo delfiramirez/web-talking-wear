@@ -1,5 +1,6 @@
 ﻿
 import mx.events.EventDispatcher;
+import mx.utils.Delegate;
 
 var historia_txt:String = "";
 var baixa_mc:MovieClip;
