@@ -1,0 +1,13 @@
+﻿AUTHORS
+
+Project management : Delfi Ramírez <delfin@segonquart.net>
+
+Graphical Design : Toti Valls <toti@talking-wear.com>
+
+Programming , Development & Digital Design : Delfi Ramírez <delfin@segonquart.net>
+
+Company: SEGONQUART STUDIO HQ
+
+Date of Release : 2007
+
+Inactive URI email :<dev@segonquart.com>
