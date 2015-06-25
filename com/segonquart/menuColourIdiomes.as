@@ -22,17 +22,25 @@ class menuColouridiomes extends MovieClip
 		private function mOver()
 		
 		{
+			var i:Number;
 			
-                arrayLang_arr[i].colorTo("#95C60D", 0.3, "easeOutCirc");
-			
+				for (var i = 0; i < arrayLang_arr.length; i++)
+				{
+	                		arrayLang_arr[i].colorTo("#95C60D", 0.3, "easeOutCirc");
+	                	]
+				
 		}
 
 		private function mOut()
 		
 		{
+			var i:Number;
 			
-                arrayLang_arr[i].colorTo("#010101", 0.3, "easeInCirc");
-			
+				for (var i = 0; i < arrayLang_arr.length; i++)
+				{
+			                arrayLang_arr[i].colorTo("#010101", 0.3, "easeInCirc");
+	                	}
+				
 		}
 		
 	}
