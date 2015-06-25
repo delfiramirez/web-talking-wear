@@ -34,11 +34,11 @@ function oOut():Void
 	pressing = false;
 };
 
-var Private_lv = new LoadVars ();
+var Privat = new LoadVars ();
 
-Private_lv.load ("/assets/tendes.txt");
+Privat.load ("/assets/tendes.txt");
 
-Private_lv.onLoad = function ():Void
+Privat.onLoad = function ():Void
 {
 	this.historia_txt.htmlText = this.Privat;
 	this.play ();
