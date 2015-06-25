@@ -74,6 +74,7 @@ Privat.onLoad = function ()
 function init():Void{
 	
 onEnterFrame = startTextApp;
+EventDispatcher.initialize(this);
 
 }
 
