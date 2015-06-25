@@ -1,4 +1,4 @@
-﻿function initApp ():Void
+﻿function initTWApp ():Void
 {
 	if (MovieClip (root).currentFrame == 1)
 	{
@@ -17,6 +17,6 @@
 		#include "as/main/frame4.as"
 	}
 }
-initApp ();
+initTWApp ();
 
 // Copyright Delfi Ramirez @ Segonquart Studio HQ  2007.
