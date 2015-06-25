@@ -1,4 +1,6 @@
-﻿function initTWApp ():Void
+﻿import mx.events.EventDispatcher;
+
+function initTWApp ():Void
 {
 	if (MovieClip (root).currentFrame == 1)
 	{

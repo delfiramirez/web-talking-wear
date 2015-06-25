@@ -1,4 +1,5 @@
 ﻿
+import mx.events.EventDispatcher;
 
 var historia_txt:String = "";
 var baixa_mc:MovieClip;
@@ -6,6 +7,11 @@ var puja_mc:MovieClip;
 var buttonsUI:Array = new Array ("puja_mc", "baixa_mc");
 
 var formatText:TextFormat = new TextFormat(); 
+
+var textScrollListener = new Object();
+
+
+textScrollListener.click = function(e){
 
 function textScroll ():Void
 {
@@ -25,6 +31,7 @@ function oOver ():Void
 	}
 	
 }
+
 function oOut ():Void
 {
 	var i:Number;
@@ -33,6 +40,8 @@ function oOut ():Void
 		pressing = false;
 		this.updateAfterEvent;
 	}
+}
+
 }
 
 function formatText():Void
@@ -44,6 +53,13 @@ this.historia_txt.multiline = true;
 }
 
 
+function startTextApp ():Void
+{
+	buttonsUI[i].addEventListener("click", textScrollListener);
+	formatText();
+	this.stop ();
+};
+
 var Privat = new LoadVars ();
 Privat.load ("/assets/tendes.txt");
 Privat.onLoad = function ()
@@ -51,15 +67,8 @@ Privat.onLoad = function ()
 	this.historia_txt.setTextFormat(formatText);
 	this.historia_txt.htmlText = this.Privat;
 	this.play ();
-	textScroll ();
 };
 
-function startTextApp ():Void
-{
-	buttonsUI[i].oOver ();
-	formatText();
-	this.stop ();
-};
 
 
 function init():Void{
