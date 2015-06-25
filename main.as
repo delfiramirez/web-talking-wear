@@ -14,6 +14,16 @@ Stage.scaleMode = "noScale";
 _global.showRedrawRegions (false);
 
 
+if (System.capabilities.hasAccessibility) {
+  eshop._accProps = new Object();
+  eshop._accProps.name = "Talking Wear Soft Skin";
+  entrar_mc._accProps.name ="Welcome - Enter";
+  titol_mc._accProps.name="Talking Wear";
+  // TODO next items 
+  
+  Accessibility.updateProperties();
+}
+
 function initTWApp ():Void
 {
 	if (MovieClip (root).currentFrame == 1)
