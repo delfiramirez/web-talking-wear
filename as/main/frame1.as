@@ -1,13 +1,17 @@
-﻿import mx.events.EventDispatcher;
+﻿
+
+import mx.events.EventDispatcher;
 import flash.filters.*;
 import mx.transitions.easing.*;
 import com.mosesSupposes.fuse.*;
 //Thanks Moses...and respect ;-)
 import com.segonquart.*;
+
+
 //-------------------------------
 ZigoEngine.simpleSetup (Shortcuts, PennerEasing);
 ZigoEngine.register (PennerEasing, Shortcuts, FuseFMP, FuseItem);
-
+//-------------------------------
 
 var click_mc:MovieClip;
 var entrar_mc:MovieClip;
