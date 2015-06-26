@@ -1,4 +1,4 @@
-import System.Objects. * ;
+﻿import System.Objects. * ;
         import mx.events.EventDispatcher;
         import mx.utils.Delegate;
         import flash.filters.GlowFilter;
@@ -18,10 +18,9 @@ import System.Objects. * ;
 //-------------------------------
 
         if (System.capabilities.hasAccessibility) {
-{
-<<<<<<< HEAD
 	  eshop._accProps = new Object();
 	  eshop._accProps.name = "Talking Wear Soft Skin";
+	  eshop_accProps.description = " Soft Skin Protection"
 	  entrar_mc._accProps.name ="Welcome - Enter";
 	  titol_mc._accProps.name="Talking Wear";
 	  softsk_mc._accProps.name ="Soft Skin Protection";
@@ -44,7 +43,6 @@ import System.Objects. * ;
 	  
 	  Accessibility.updateProperties();
 }
-=======
 
 if (_accProps == undefined)
         {
@@ -52,15 +50,7 @@ if (_accProps == undefined)
                 }
 
 
-eshop._accProps.name = "Talking Wear";
-        eshop_accProps.description = " Soft Skin Protection"
-        entrar_mc._accProps.name = "Welcome - Enter";
-        titol_mc._accProps.name = "Talking Wear";
-        // TODO next items
 
-        Accessibility.updateProperties();
-        }
->>>>>>> origin/master
 
 
 //-------------------------------
