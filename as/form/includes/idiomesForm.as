@@ -8,9 +8,8 @@ var esContact:String = "_Contacto";
         var caSend
 :String = "Enviar Email!";
         //
-        contact_txt._accProps:Object = new Object();
-        send_txt._accProps
-:Object = new Object();
+        var contact_txt._accProps:Object = new Object();
+        var send_txt._accProps :Object = new Object();
         //
         if (System.capabilities.language == "en" || System.capabilities.language == "de")
     {
@@ -19,6 +18,7 @@ var esContact:String = "_Contacto";
         this.contact_txt.kerning = 0.7;
         //
         this.contact_txt._accProps.name = enContact;
+        this.contact_txt._accProps.description = "your email";
         this.send_txt._accProps.name = enSend;
         Accessibility.updateProperties ();
     }
@@ -29,6 +29,7 @@ if (System.capabilities.language == "fr")
         this.ok_mc.send_txt.text = frSend;
         //
         this.contact_txt._accProps.name = frContact;
+        this.contact_txt._accProps.description = "votre email";
         this.send_txt._accProps.name = frSend;
         Accessibility.updateProperties ();
     }
@@ -36,17 +37,19 @@ if (System.capabilities.language == "es")
     {
         this.contact_txt.text = esContact;
         this.ok_mc.send_txt.text = esSend;
-
+        //
         this.contact_txt._accProps.name = esContact;
+        this.contact_txt._accProps.description = "su email";
         this.send_txt._accProps.name = esSend;
         Accessibility.updateProperties ();
-
-    } else
+    }
+else
     {
         this.contact_txt.text = caContact;
         this.ok_mc.send_txt.text = caSend;
         //
         this.contact_txt._accProps.name = caContact;
+        this.contact_txt._accProps.description = "el vostre email";
         this.send_txt._accProps.name = caSend;
         Accessibility.updateProperties ();
     }
