@@ -57,6 +57,7 @@ function initUI ():Void
 	this.b2.slideTo ('0', '0', 1, "linear");
 	this.b2.tintTo ('#E7F3DB', 100, "easeOutSine");
 	enterShopButton ();
+	this.onEnterFrame = null;
 }
 
 function enterShopButton ():Void

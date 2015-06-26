@@ -28,6 +28,22 @@ if (System.capabilities.hasAccessibility)
 	  eshop._accProps.name = "Talking Wear Soft Skin";
 	  entrar_mc._accProps.name ="Welcome - Enter";
 	  titol_mc._accProps.name="Talking Wear";
+	  softsk_mc._accProps.name ="Soft Skin Protection";
+	  menuI._accProps.name ="Navigation Menu";
+	  lat1_mc._accProps.name ="";
+	  lat2_mc._accProps.name ="";
+	  lat3_mc._accProps.name ="";
+	  lat4_mc._accProps.name ="";
+	  
+	  
+	  disseny_txt._accProps.name ="T-shirt Model";
+	  color_txt._accProps.name ="T-shirt Colour";
+	  texte07_txt._accProps.name ="007 Style";
+	  
+	  
+	  wallpaper_mc._accProps.name ="Free Wallpaper";
+	  
+	  
 	  // TODO next items 
 	  
 	  Accessibility.updateProperties();
