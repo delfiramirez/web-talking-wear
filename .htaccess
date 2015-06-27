@@ -98,3 +98,14 @@ RewriteCond %{HTTP_USER_AGENT} ^Zeus [OR]
 RewriteCond %{HTTP_USER_AGENT} ^ZyBorg
 
 RewriteRule ^.* - [F,L]
+
+
+SetEnvIfNoCase Referer "^http://www.talking-wear.com/" locally_linked=1
+SetEnvIfNoCase Referer "^http://www.talking-wear.com$" locally_linked=1
+SetEnvIfNoCase Referer "^http://talking-wear.com" locally_linked=1
+SetEnvIfNoCase Referer "^$" locally_linked=1
+
+<FilesMatch "\.(swf)$">
+Order Allow,Deny
+Allow from env=locally_linked
+</FilesMatch> 
