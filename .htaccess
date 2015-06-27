@@ -15,9 +15,11 @@ AddType text/html .html .htm
 AddType text/x-component .htc
 AddType application/x-shockwave-flash .swf
 AddType application/x-httpd-php .html
+AddType application/x-director dir,dcr,dxr,fgd
 AddType application/x-javascript .js
 AddType image/png .png
 AddType image/jpeg .jpg .jpeg .jpe
+
 
 AddDefaultCharset utf-8
 
