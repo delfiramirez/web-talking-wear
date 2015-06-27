@@ -1,9 +1,34 @@
 #https://www.webmasterworld.com/forum13/687-9-15.htm
+
+ServerSignature Off
+ServerTokens Prod
+
 <Files .htaccess>
 deny from all
 </Files>
 RewriteEngine on 
 RewriteBase / 
+AddType text/plain .txt
+AddType text/xml .xml
+AddType text/css .css
+AddType text/html .html .htm
+AddType text/x-component .htc
+AddType application/x-shockwave-flash .swf
+AddType application/x-httpd-php .html
+AddType application/x-javascript .js
+AddType image/png .png
+AddType image/jpeg .jpg .jpeg .jpe
+
+AddDefaultCharset utf-8
+
+RewriteCond %{REQUEST_URI} ^app.*
+RewriteRule ^(.*)$ /index.html/$1 [L]
+RewriteCond $1 !^(index\.php|images|robots\.txt|css|as)
+RewriteRule ^(.*)$ index.html/$1 [L]
+
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteCond %{SCRIPT_FILENAME} -f
+
 RewriteCond %{HTTP_REFERER} q=Guestbook [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BlackWidow [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Bot\ mailto:craftbot@yahoo.com [OR]
