@@ -1,5 +1,5 @@
 import com.segonquart. *
-        //
+
                 function onPreloaderOut ():Void
                 {
                     preloader_mc.removeEventListener ("onPreloaderOut",this);
