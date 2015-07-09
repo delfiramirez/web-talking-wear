@@ -30,6 +30,7 @@ textScrollListener.click = function(e:Object)
 				pressing = true;
 				movement = -1;
 				this.updateAfterEvent;
+				
 			}
 			
 		}
@@ -61,8 +62,8 @@ function formatText():Void
 		this.historia_txt.multiline = true;
 }
 
-var Privat = new LoadVars ();
-Privat.load ("/assets/tendes.txt");
+var Privat:LoadVars = new LoadVars ();
+Privat.load ("/assets/tendes.txt?ver=" + Math.floor(Math.random() * 777));
 Privat.onLoad = function ()
 {
 		this.historia_txt.setTextFormat(formatText);
