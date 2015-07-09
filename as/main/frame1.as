@@ -80,8 +80,9 @@ function enterShopButton ():Void
 	this.m02.scaleTo (113, .6, 'easeOutQuad', .5);
 }
 
-var enterEshopListener = new Object ();
-enterEshopListener.click = function (e)
+var enterEshopListener:Object = new Object ();
+
+enterEshopListener.click = function (e:Object)
 {
 	var entrar = getTimer () + 1500;
 	this.entrar_mc = target;
