@@ -1,17 +1,21 @@
-﻿import flash.display.MovieClip;
-import flash.display.Stage;
-import flash.System.security.*;
-class com.segonquart.Configuration extends MovieClip
+﻿class com.segonquart.Configuration extends MovieClip
 {
-	public function configuration ():Void
+	public function Configuration ()
 	{
-		System.security.allowDomain ("http://www.talking-wear.com");
-		Stage.showMenu = false;
-		Stage.scaleMode = "noScale";
-		_global.showRedrawRegions (false);
+		Stage.addListener (this);
+		mx.events.EventDispatcher.initialize (this);
+	}
+	public function init (m:MovieClip)
+	{
+		this.m = m;
+		m.config ();
 	}
 	static function config ():Void
 	{
-		var twoQT = new com.segonquart.config.Configuration();
+		System.security.allowDomain ("http://www.talking-wear.com");
+		System.security.loadPolicyFile ("http://segonquart.net/crossdomain.xml");
+		Stage.showMenu = false;
+		Stage.scaleMode = "noScale";
+		_global.showRedrawRegions (false);
 	}
 }
