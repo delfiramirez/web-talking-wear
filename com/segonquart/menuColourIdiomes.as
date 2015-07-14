@@ -1,4 +1,3 @@
-	
 import mx.transitions.easing.*;
 import com.mosesSupposes.fuse.*;
 
@@ -9,8 +8,7 @@ class menuColouridiomes extends MovieClip
 		public var arrayLang_arr:Array = new Array ("cat", "es", "en", "fr");
 		
 			
-		function menuColourIdiomes ():Void
-		
+	public function menuColourIdiomes ()
 		{
 			
 		this.onRollOver = this.mOver;
@@ -20,7 +18,6 @@ class menuColouridiomes extends MovieClip
 		}
 
 		private function mOver()
-		
 		{
 			var i:Number;
 			
@@ -32,7 +29,6 @@ class menuColouridiomes extends MovieClip
 		}
 
 		private function mOut()
-		
 		{
 			var i:Number;
 			
