@@ -1,5 +1,6 @@
-﻿import mx.events.EventDispatcher;
+import mx.events.EventDispatcher;
 import mx.utils.Delegate;
+
 class com.segonquart.Configuration extends MovieClip
 {
 	public var addListener:Function;
@@ -17,7 +18,7 @@ class com.segonquart.Configuration extends MovieClip
 		this.m = m;
 		m.config ();
 	}
-	static function config ():Void
+	static function config ()
 	{
 		System.security.allowDomain (URLAPP);
 		System.security.loadPolicyFile (POLICY);
