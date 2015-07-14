@@ -53,8 +53,9 @@ class com.segonquart.Entrar extends MovieClip
 		v2.tintTo ("#95C60D", 100, "easeOutSine");
 		marcMenu_mc.fadeIn ();
 		titol_mcM.fadeOut () + 10000;
+		removeEventListener (this, "onPress");
 	}
-	function timeToEnter (m:MovieClip)
+      private function timeToEnter (m:MovieClip)
 	{
 		var entrar:Number = getTimer () + 1500;
 		m.onRelease = function ()
@@ -65,7 +66,7 @@ class com.segonquart.Entrar extends MovieClip
 			}
 			else
 			{
-				delete this.onEnterFrame;
+				this.onEnterFrame = null;
 			}
 		};
 	}
