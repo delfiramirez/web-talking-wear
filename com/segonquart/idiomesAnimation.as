@@ -1,14 +1,13 @@
-	
 import mx.transitions.easing.*;
 import com.mosesSupposes.fuse.*;
 
-class idiomesAnimation extends Movieclip
+class com.segonquart.idiomesAnimation extends Movieclip
         {
 
   	private var arrayLang_arr:Array = new Array ("cat", "es", "en", "fr");
 
 
-			function idiomesAnimation():Void
+	function idiomesAnimation():Void
 		{
 			this.stop();
 			this.onEnterFrame = this.enterSlide;
@@ -23,6 +22,7 @@ class idiomesAnimation extends Movieclip
 			arrayLang_arr[1].slideTo('0', '-40', 0.8, 'easeInOutBack', 1.1);
 			arrayLang_arr[2].slideTo('0', '-40', 0.9, 'easeInOutBack', 1.2);
 			arrayLang_arr[3].slideTo('0', '-40', 1, 'easeInOutBack', 1.3);
+			
 			
 		}
 
@@ -41,7 +41,7 @@ class idiomesAnimation extends Movieclip
 	private function arrayColour()
 		{
 			
-			for ( var:i:Number=0 ; arrayLang_arr[i] <4; i++)
+			for ( var:i:Number=0 ; arrayLang_arr[i].length <4; i++)
 			{
 				this.colorTo("#628D22", 0.3, "easeOutCirc");
 				_parent.colorTo('#4b4b4b', 1, 'linear', .2);
