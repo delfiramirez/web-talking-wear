@@ -1,7 +1,8 @@
 ﻿import flash.display.MovieClip;
-class com.segonquart.anyShirt extends MovieClip
+
+class com.segonquart.AnyShirt extends MovieClip
 {
-	function AnyShirt (theTarget:MovieClip)
+	public function AnyShirt (theTarget:MovieClip)
 	{
 		this._parent.theTarget.removeMovieClip ();
 	}
