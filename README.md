@@ -2,7 +2,7 @@
 
 Talking Wear. Soft Skin Protection
 
-![](https://github.com/delfiramirez/web-talking-wear/blob/master/assets/t-wear.jpg)
+![](https://github.com/delfiramirez/web-talking-wear/blob/master/public/assets/t-wear.jpg)
 
 Application E-commerce  website. Circa 2007.
 
