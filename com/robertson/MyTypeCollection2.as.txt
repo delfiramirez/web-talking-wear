@@ -1,0 +1,21 @@
+import com.probertson.utils.TypedCollectionBase;
+
+import MyType;
+
+class MyTypeCollection2 extends TypedCollectionBase
+{
+	public function addItem(item:MyType):Void
+	{
+		super.addItem(item);
+	}
+
+	public function contains(item:MyType):Boolean
+	{
+		return super.contains(item);
+	}
+
+	public function getItemAt(index:Number):MyType
+	{
+		return MyType(super.getItemAt(index));
+	}
+}

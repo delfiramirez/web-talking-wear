@@ -1,18 +1,13 @@
-﻿
-
-import mx.events.EventDispatcher;
+﻿import mx.events.EventDispatcher;
 import flash.filters.*;
 import mx.transitions.easing.*;
 import com.mosesSupposes.fuse.*;
 //Thanks Moses...and respect ;-)
 import com.segonquart.*;
-
-
 //-------------------------------
 ZigoEngine.simpleSetup (Shortcuts, PennerEasing);
 ZigoEngine.register (PennerEasing, Shortcuts, FuseFMP, FuseItem);
 //-------------------------------
-
 var click_mc:MovieClip;
 var entrar_mc:MovieClip;
 var ok_mc:MovieClip;
@@ -22,9 +17,6 @@ var m02:MovieClip;
 var botiga_mc:MovieClip;
 var marcMenu_mc:MovieClip;
 var softsk_mc:MovieClip;
-
-
-
 function initUI ():Void
 {
 	this.ok_mc._visible = false;
@@ -56,10 +48,10 @@ function initUI ():Void
 	this.titol_mc.tintTo ('#508F1E', 1.4, 'easeOutBack', .2);
 	this.b2.slideTo ('0', '0', 1, "linear");
 	this.b2.tintTo ('#E7F3DB', 100, "easeOutSine");
+	
 	enterShopButton ();
-	this.onEnterFrame = null;
+	delete this.onEnterFrame;
 }
-
 function enterShopButton ():Void
 {
 	this.entrar_mc.alphaTo (100, 2, "easeOutQuad", 2.3);
@@ -79,9 +71,7 @@ function enterShopButton ():Void
 	this.m02.slideTo (707, 293, .7, 'easeInOutQuint', 1.2);
 	this.m02.scaleTo (113, .6, 'easeOutQuad', .5);
 }
-
 var enterEshopListener:Object = new Object ();
-
 enterEshopListener.click = function (e:Object)
 {
 	var entrar = getTimer () + 1500;
@@ -119,12 +109,11 @@ enterEshopListener.click = function (e:Object)
 		this.removeEventListener ();
 	};
 };
-
 function initFrame1 ():Void
 {
+	init(this);
 	onEnterFrame = initUI;
 	this.addEventListener ("click", enterShopListener);
 	EventDispatcher.initialize (this);
 }
-
 initFrame1 ();

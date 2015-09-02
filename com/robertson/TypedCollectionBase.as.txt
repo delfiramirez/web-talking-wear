@@ -1,0 +1,98 @@
+/**
+ * @author H. Paul Robertson
+ */
+class com.probertson.utils.TypedCollectionBase extends Object
+{
+	/////////////////////////////////////////////////////
+	// Private Fields
+	/////////////////////////////////////////////////////
+	private var _innerArray:Array;
+
+
+	/////////////////////////////////////////////////////
+	// Constructor
+	/////////////////////////////////////////////////////
+	public function TypedCollectionBase(initSize:Number)
+	{
+		if (initSize != undefined)
+		{
+			_innerArray = new Array(initSize);
+		}
+		else
+		{
+			_innerArray = new Array();
+		}
+	}
+
+
+	/////////////////////////////////////////////////////
+	// Public Properties
+	/////////////////////////////////////////////////////
+	public function get length():Number
+	{
+		return _innerArray.length;
+	}
+
+
+	/////////////////////////////////////////////////////
+	// Public Methods
+	/////////////////////////////////////////////////////
+	public function addItem(item:Object):Void
+	{
+		if (undefined == item)
+		{
+			return;
+		}
+
+		if (-1 == _indexOf(item))
+		{
+			_innerArray.push(item);
+		}
+	}
+
+	public function clear():Void
+	{
+		_innerArray = new Array();
+	}
+
+	public function contains(item:Object):Boolean
+	{
+		return (_indexOf(item) > -1);
+	}
+
+	public function getItemAt(index:Number):Object
+	{
+		return _innerArray[index];
+	}
+
+	public function isEmpty():Boolean
+	{
+		return (0 == _innerArray.length);
+	}
+
+	public function removeItemAt(index:Number):Void
+	{
+		if (undefined == index || index < 0 || (index > _innerArray.length - 1))
+		{
+			return;
+		}
+		_innerArray.splice(index, 1);
+	}
+
+
+	/////////////////////////////////////////////////////
+	// Private Methods
+	/////////////////////////////////////////////////////
+	private function _indexOf(item:Object):Number
+	{
+		var numItems:Number = _innerArray.length;
+		var i:Number = -1;
+		while (++i < numItems) {
+			var current:Object = _innerArray[i];
+			if (item == current) {
+				return i;
+			}
+		}
+		return -1;
+	}
+}

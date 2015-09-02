@@ -5,10 +5,10 @@ var baixa_mc:MovieClip;
 var puja_mc:MovieClip;
 var buttonsUI:Array = new Array ("puja_mc", "baixa_mc");
 
-var textScrollListener = new Object ();
 
+var textScrollListener:Object = new Object ();
 
-textScrollListener.click = function (e:Object)
+textScrollListener.click = function (e:Object):Void 
 {
 	function textScroll ():Void
 	{
@@ -25,7 +25,6 @@ textScrollListener.click = function (e:Object)
 			pressing = true;
 			movement = -1;
 			this.removeEventListener ();
-			
 		}
 	}
 	function oOut ():Void
@@ -35,39 +34,23 @@ textScrollListener.click = function (e:Object)
 		{
 			pressing = false;
 			this.removeEventListener ();
-			
 		}
 	}
 };
 function startTextApp ():Void
 {
+	var Privat:LoadVars = new LoadVars ();
+	Privat.load ("/assets/tendes.txt?ver=" + Math.floor (Math.random () * 777));
+	Privat.onLoad = function ()
+	{
+		this.historia_txt.setTextFormat (formatText);
+		this.historia_txt.htmlText = this.Privat;
+		this.play ();
+	};
 	buttonsUI[i].addEventListener ("click", textScrollListener);
 	formatText ();
 	this.stop ();
 }
-
-#initclip
-
-var formatText:TextFormat = new TextFormat ();
-
-function formatText ():Void
-{
-	this.historia_txt.html = true;
-	this.historia.htmlText = true;
-	this.historia_txt.wordWrap = true;
-	this.historia_txt.multiline = true;
-}
-
-var Privat:LoadVars = new LoadVars ();
-Privat.load ("/assets/tendes.txt?ver=" + Math.floor (Math.random () * 777));
-Privat.onLoad = function ()
-{
-	this.historia_txt.setTextFormat (formatText);
-	this.historia_txt.htmlText = this.Privat;
-	this.play ();
-};
-#endinitclip
-
 function initFrame4 ():Void
 {
 	onEnterFrame = startTextApp;

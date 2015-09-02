@@ -89,10 +89,6 @@ function OOSeven ():Void
 		this._parent.marcMenu_mc.tintTo ('#508F1E', 1, 'linear', .2);
 };
 
-function anyShirt ():Void
-{
-		this._parent.bonus_mc.removeMovieClip ();
-}
 
 function menuLateral ():Void
 {
@@ -126,7 +122,7 @@ function onMenuRelease (e:Object):Void
 			break;
 		case lat2_mc :
 			gotoAndStop_mc (5);
-			this.anyShirt ();
+			bonus_mc.AnyShirt ();
 			this._parent.james_mc.removeMovieClip ();
 			this._parent.james_mc.unloadMovie (5);
 			this._parent.menuI.alphaTo (0, 1, "easeInOutBack");
@@ -152,16 +148,17 @@ function entraLateral ():Void
 		lat2_mc.slideTo ('86', '0', 0.8, 'easeInOutBack', 0.3);
 		lat3_mc.slideTo ('86', '0', 0.9, 'easeInOutBack', 0.4);
 		lat4_mc.slideTo ('86', '0', 1, 'easeInOutBack', 0.5);
-		menuLateral ();
+		this.menuLateral ();
 }
 
 function initFrame2():Void
 {
-	onEnterFrame = hideUIelements;
-	onEnterFrame = startFrameUI;
+	this.onEnterFrame = hideUIelements;
+	this.onEnterFrame = startFrameUI;
 	entraLateral ();
 	bonus_mc.onRelease = OOSeven;
 	this.stop ();
+	this.onEnterFrame == null;
 }
 
 initFrame2();
